@@ -141,3 +141,108 @@ Answer is net user /add securityninja hardToHack123$ <br/>
 
 
 
+
+<h2>Program walk-through</h2>
+
+<b>Answer the question below <br/>
+
+1
+
+<p align="center">
+  I was able to answer question after answering question 2 first. I looked up what the Sysmon event id for a created file.
+<img width="1206" alt="image" src="https://github.com/user-attachments/assets/e617867a-862c-413c-b425-0af9f8dcb796" />
+I input EventCode=11 into the search bar
+<img width="1440" alt="Screenshot 2025-04-18 at 12 31 52 PM" src="https://github.com/user-attachments/assets/8b7b694d-a33e-4a1a-9bb0-576140f744f2" />
+I scrolled down to the field images and clicked it. There I saw a result with an executable that looked suspicious. I inputting the finding and it was the correct answer.
+
+
+<br />
+<br />
+Answer is C:\Users\Administrator\Documents\cmd.exe <br/>
+
+
+
+
+
+<h2>Program walk-through</h2>
+
+<b>Answer the question below <br/>
+1
+
+<p align="center">
+    The answer was discussed during question 1
+
+
+
+<br />
+<br />
+Answer is EventCode=11 <br/>
+
+
+
+
+<h2>Program walk-through</h2>
+
+<b>Answer the question below <br/>
+1
+
+
+<p align="center">
+    In the searh bar I inputted ' Image="C:\Users\Administrator\Documents\cmd.exe" md5 '. Only one event appeared with the MD5 hash value highlight
+<img width="1440" alt="Screenshot 2025-04-18 at 12 41 55 PM" src="https://github.com/user-attachments/assets/bd8e94df-f2eb-469f-b987-9d2cc8202d73" />
+
+
+
+
+<br />
+<br />
+Answer is 290c7dfb01e50cea9e19da81a781af2c <br/>
+
+
+
+
+
+
+<h2>Program walk-through</h2>
+
+<b>Answer the question below <br/>
+1
+
+<p align="center">
+    I left ' Image="C:\Users\Administrator\Documents\cmd.exe" ' on the search bar but removed 'md5'.
+<img width="1440" alt="Screenshot 2025-04-18 at 1 03 20 PM" src="https://github.com/user-attachments/assets/52ab777e-c0d1-4168-b926-2b1c051e93e0" />
+    I scrolled down and looked through the filed and saw only named 'TargetFilename'. I looked through it and saw that the was a single file on all the results. That file was the answer to the question.
+<img width="1440" alt="Screenshot 2025-04-18 at 1 03 58 PM" src="https://github.com/user-attachments/assets/a5333ef9-89a6-4de5-bf55-011089616b16" />
+
+
+
+
+<br />
+<br />
+Answer is readme.txt <br/>
+
+
+
+<h2>Program walk-through</h2>
+
+<b>Answer the question below <br/>
+
+1
+
+<p align="center">
+    On my first attempt, I put 'EventCode=4720'. I was able to see the new username created but I wasn't able to find the command for the user creation. So I went on google and searched, 'command to add new user' and the result was 'net user username password /add'. I decided only to add the '/add' onto the search bar in Splunk.
+<img width="1440" alt="Screenshot 2025-04-18 at 1 24 04 PM" src="https://github.com/user-attachments/assets/2fee5fb0-9a13-493b-8d2a-e61f3b3f6e59" />
+    I looked into the field named 'CommandLine' and found the new user I saw when I had ented EventCode=4720 and the command for its creation.
+<img width="1440" alt="Screenshot 2025-04-18 at 1 25 06 PM" src="https://github.com/user-attachments/assets/df98e23a-1522-4953-b786-f4ff03dfe344" />
+
+
+
+
+<br />
+<br />
+Answer is net user /add securityninja hardToHack123$ <br/>
+
+
+
+
+
