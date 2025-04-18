@@ -146,19 +146,23 @@ Answer is net user /add securityninja hardToHack123$ <br/>
 
 <b>Answer the question below <br/>
 
-1
+The attacker migrated the process for better persistence. What is the migrated process image (executable), and what is the original process image (executable) when the attacker got on the system?
 
 <p align="center">
-  I was able to answer question after answering question 2 first. I looked up what the Sysmon event id for a created file.
-<img width="1206" alt="image" src="https://github.com/user-attachments/assets/e617867a-862c-413c-b425-0af9f8dcb796" />
-I input EventCode=11 into the search bar
-<img width="1440" alt="Screenshot 2025-04-18 at 12 31 52 PM" src="https://github.com/user-attachments/assets/8b7b694d-a33e-4a1a-9bb0-576140f744f2" />
-I scrolled down to the field images and clicked it. There I saw a result with an executable that looked suspicious. I inputting the finding and it was the correct answer.
+    There was a hint to this question. The hint was ' Try sysmon event code 8 '. I did not know what event code 8 was so I did a quick google seach and this is what I received.
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/b194a710-dc5c-4947-9d73-5a95ae917a12" />
+    I put EventCode=8 into the search bar in Splunk and received two events.
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/64a232d5-29c4-4972-8172-52bc0f938b38" />
+    I went down looking in the interesting fields section and under the field 'SourceImage' was the answer.
+<img width="1440" alt="Screenshot 2025-04-18 at 2 48 34 PM" src="https://github.com/user-attachments/assets/ad4241fb-d4de-4f17-857b-7c12a1233a4a" />
+
+
+
 
 
 <br />
 <br />
-Answer is C:\Users\Administrator\Documents\cmd.exe <br/>
+Answer is C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Windows\System32\wbem\unsecapp.exe <br/>
 
 
 
