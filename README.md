@@ -171,16 +171,18 @@ Answer is C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Windows\S
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-1
+The attacker also retrieved the system hashes. What is the process image used for getting the system hashes?
 
 <p align="center">
-    The answer was discussed during question 1
+    In this question, instead of the field SourceImage, I went to TargetImage. I selected the process migation that wasn't used for the previous question for this question and it was the right answer.
+<img width="1440" alt="Screenshot 2025-04-18 at 3 06 46 PM" src="https://github.com/user-attachments/assets/09b0f8c3-2cc4-424f-b9ff-b804c1babd99" />
+
 
 
 
 <br />
 <br />
-Answer is EventCode=11 <br/>
+Answer is C:\Windows\System32\lsass.exe <br/>
 
 
 
