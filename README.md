@@ -122,26 +122,20 @@ Answer is readme.txt <br/>
 
 <b>Answer the question below <br/>
 
-2
+What was the command the attacker used to add a new user to the compromised system?
 
 <p align="center">
-I knew to look for an executable file(.exe). Since the question asked what command was used, I looked the a field containing the word command and "CommandLine" appeared. I did a quick look at it and saw one that looked suspicious. I decided to seach the field "CommandLine" as a wildcard just to not overlook anything. Also, I once again added user "A1berto" to focus the search. <br/>
-<img width="1440" alt="image" src="https://github.com/user-attachments/assets/c295758a-0cf0-42ab-be0c-7f12cb61cc74" />
-With 7 results I looked through them all. Looking at each CommandLine field within the events, the one that had looked suspicious to me was the answer to the question.
-<img width="1440" alt="Screenshot 2025-04-15 at 1 37 12 PM" src="https://github.com/user-attachments/assets/8d058594-06b9-4abf-b23c-5d9dbc1f936f" />
-After looking at how others solved this question, there is a more efficient way. There is an event id associated with program execution (Event ID 4688)
-<img width="1440" alt="image" src="https://github.com/user-attachments/assets/1b2a15b3-7489-4844-831e-0e2871c29a48" />
-The full search should be " index=main EventID=4688 A1berto ". Look at the CommandLine field and you'll find the same answer. Through this search I learned that WMIC is a software utility that allows users to perform Windows Management Instrumentation operations with a command prompt. That ransomware authors have been seen to use wmic.exe to gain access to remote systems and then perform processes on it to prepare for or execute the ransomware attack.
-<img width="1440" alt="Screenshot 2025-04-15 at 1 50 01 PM" src="https://github.com/user-attachments/assets/ad356081-fbc7-434e-ad31-fe34cf339e34" />
-
-
+    On my first attempt, I put 'EventCode=4720'. I was able to see the new username created but I wasn't able to find the command for the user creation. So I went on google and searched, 'command to add new user' and the result was 'net user username password /add'. I decided only to add the '/add' onto the search bar in Splunk.
+<img width="1440" alt="Screenshot 2025-04-18 at 1 24 04 PM" src="https://github.com/user-attachments/assets/2fee5fb0-9a13-493b-8d2a-e61f3b3f6e59" />
+    I looked into the field named 'CommandLine' and found the new user I saw when I had ented EventCode=4720 and the command for its creation.
+<img width="1440" alt="Screenshot 2025-04-18 at 1 25 06 PM" src="https://github.com/user-attachments/assets/df98e23a-1522-4953-b786-f4ff03dfe344" />
 
 
 
 
 <br />
 <br />
-Answer is C:\windows\System32\Wbem\WMIC.exe" /node:WORKSTATION6 process call create "net user /add A1berto paw0rd1 <br/>
+Answer is net user /add securityninja hardToHack123$ <br/>
 
 
 
