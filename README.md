@@ -217,20 +217,19 @@ Answer is i3gfPctK1c2x.aspx <br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-1
+What is the command line that executed this web shell?
 
 <p align="center">
-    I left ' Image="C:\Users\Administrator\Documents\cmd.exe" ' on the search bar but removed 'md5'.
-<img width="1440" alt="Screenshot 2025-04-18 at 1 03 20 PM" src="https://github.com/user-attachments/assets/52ab777e-c0d1-4168-b926-2b1c051e93e0" />
-    I scrolled down and looked through the filed and saw only named 'TargetFilename'. I looked through it and saw that the was a single file on all the results. That file was the answer to the question.
-<img width="1440" alt="Screenshot 2025-04-18 at 1 03 58 PM" src="https://github.com/user-attachments/assets/a5333ef9-89a6-4de5-bf55-011089616b16" />
+   In the search car I put i3gfPctK1c2x.aspx. One event appeared. I looked at the field CommandLine and found the answer.
+<img width="1440" alt="Screenshot 2025-04-18 at 4 15 21 PM" src="https://github.com/user-attachments/assets/1c507042-c46a-46c4-b8c4-6095f998fc16" />
+
 
 
 
 
 <br />
 <br />
-Answer is readme.txt <br/>
+Answer is attrib.exe -r \\\\win-aoqkg2as2q7.bellybear.local\C$\Program Files\Microsoft\Exchange Server\V15\FrontEnd\HttpProxy\owa\auth\i3gfPctK1c2x.aspx <br/>
 
 
 
@@ -251,7 +250,7 @@ Answer is readme.txt <br/>
 
 <br />
 <br />
-Answer is net user /add securityninja hardToHack123$ <br/>
+Answer: attrib.exe -r \\\\win-aoqkg2as2q7.bellybear.local\C$\Program Files\Microsoft\Exchange Server\V15\FrontEnd\HttpProxy\owa\auth\i3gfPctK1c2x.aspx <br/>
 
 
 
