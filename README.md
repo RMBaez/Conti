@@ -65,7 +65,7 @@ Answer is C:\Users\Administrator\Documents\cmd.exe <br/>
 What is the Sysmon event ID for the related file creation event?
 
 <p align="center">
-The answer was discussed during question 1
+    The answer was discussed during question 1
 
 
 
@@ -101,15 +101,20 @@ Answer is 290c7dfb01e50cea9e19da81a781af2c <br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-2
+What file was saved to multiple folder locations?
 
 <p align="center">
-The answer was dicussed in an earlier question. User A1berto is impersonating Alberto
+    I left ' Image="C:\Users\Administrator\Documents\cmd.exe" ' on the search bar but removed 'md5'.
+<img width="1440" alt="Screenshot 2025-04-18 at 1 03 20 PM" src="https://github.com/user-attachments/assets/52ab777e-c0d1-4168-b926-2b1c051e93e0" />
+    I scrolled down and looked through the filed and saw only named 'TargetFilename'. I looked through it and saw that the was a single file on all the results. That file was the answer to the question.
+<img width="1440" alt="Screenshot 2025-04-18 at 1 03 58 PM" src="https://github.com/user-attachments/assets/a5333ef9-89a6-4de5-bf55-011089616b16" />
+
+
 
 
 <br />
 <br />
-Answer is Alberto <br/>
+Answer is readme.txt <br/>
 
 
 
