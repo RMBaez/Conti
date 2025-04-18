@@ -190,19 +190,24 @@ Answer is C:\Windows\System32\lsass.exe <br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-1
+What is the web shell the exploit deployed to the system?
 
 
 <p align="center">
-    In the searh bar I inputted ' Image="C:\Users\Administrator\Documents\cmd.exe" md5 '. Only one event appeared with the MD5 hash value highlight
-<img width="1440" alt="Screenshot 2025-04-18 at 12 41 55 PM" src="https://github.com/user-attachments/assets/bd8e94df-f2eb-469f-b987-9d2cc8202d73" />
+    To be honest, I did not know what I was looking for. The hint I received for this question was 'Try looking in the IIS logs for POST requests.' I did not know what IIS logs are but I have an idea of what POST requests are. So in the Splunk search bar I added POST and pressed enter. I started searching through the interested fields looking for 'IIS'. In the field sourcetype, it had 'iis' as a value so I added that into the search bar as well.
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/d93e3f9d-a8fe-4b9c-aa08-18cd2d2d296a" />
+    I don't know what a web shell exploit looks like so I googled 'web shell file type exploit'. While do some reading, I came across several and inputting them into the search bar in Splunk with the wildcard(*) attached hoping for a bite. The only one that produced results was 'asp'.
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/4bfe7d2f-1bd6-46a6-bedb-1336e6190cef" />
+    I saw a field named 'cs_uri_stem'. Although I don't know much of URIs, but I know it relates to webpages. I looked through its values and found the answer.
+<img width="1440" alt="Screenshot 2025-04-18 at 4 09 00 PM" src="https://github.com/user-attachments/assets/35b36219-b831-4060-a0af-1a1d87f0360a" />
+
 
 
 
 
 <br />
 <br />
-Answer is 290c7dfb01e50cea9e19da81a781af2c <br/>
+Answer is i3gfPctK1c2x.aspx <br/>
 
 
 
