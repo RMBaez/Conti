@@ -62,20 +62,17 @@ Answer is C:\Users\Administrator\Documents\cmd.exe <br/>
 <h2>Program walk-through</h2>
 
 <b>Answer the question below <br/>
-2
+What is the Sysmon event ID for the related file creation event?
 
 <p align="center">
-The question states the adversaty CREATING a backdoor user. I googled the event id associated with user creation and recieved event id 4720. I then added EventID=4720 into the search bar. I scrolled down and found the newly created user. At a quick glance it might read Alberto but the "l" is actually a "1" thus giving the answer.    <br/>
-<img width="1440" alt="image" src="https://github.com/user-attachments/assets/e77b5546-f0b4-47fc-88db-8ea4b0051113" />
-<img width="1440" alt="image" src="https://github.com/user-attachments/assets/e13a9add-d45e-4f67-9e21-d4a601e6cb01" />
-<img width="1440" alt="Screenshot 2025-04-15 at 12 35 46 PM" src="https://github.com/user-attachments/assets/74aa703f-b5d0-4eca-b7eb-2b1cd55fc5b0" />
+The answer was discussed during question 1
 
 
 
 
 <br />
 <br />
-Answer is A1berto <br/>
+Answer is EventCode=11 <br/>
 
 
 
