@@ -229,28 +229,8 @@ What is the command line that executed this web shell?
 
 <br />
 <br />
-Answer is attrib.exe -r \\\\win-aoqkg2as2q7.bellybear.local\C$\Program Files\Microsoft\Exchange Server\V15\FrontEnd\HttpProxy\owa\auth\i3gfPctK1c2x.aspx <br/>
-
-
-
-<h2>Program walk-through</h2>
-
-<b>Answer the question below <br/>
-
-1
-
-<p align="center">
-    On my first attempt, I put 'EventCode=4720'. I was able to see the new username created but I wasn't able to find the command for the user creation. So I went on google and searched, 'command to add new user' and the result was 'net user username password /add'. I decided only to add the '/add' onto the search bar in Splunk.
-<img width="1440" alt="Screenshot 2025-04-18 at 1 24 04 PM" src="https://github.com/user-attachments/assets/2fee5fb0-9a13-493b-8d2a-e61f3b3f6e59" />
-    I looked into the field named 'CommandLine' and found the new user I saw when I had ented EventCode=4720 and the command for its creation.
-<img width="1440" alt="Screenshot 2025-04-18 at 1 25 06 PM" src="https://github.com/user-attachments/assets/df98e23a-1522-4953-b786-f4ff03dfe344" />
-
-
-
-
-<br />
-<br />
 Answer: attrib.exe -r \\\\win-aoqkg2as2q7.bellybear.local\C$\Program Files\Microsoft\Exchange Server\V15\FrontEnd\HttpProxy\owa\auth\i3gfPctK1c2x.aspx <br/>
+
 
 
 
