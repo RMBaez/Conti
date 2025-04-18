@@ -11,11 +11,16 @@ Task: You are assigned to investigate this situation. Use Splunk to answer the q
 
 <h2>Questions</h2>
 
-- <b>How many events were collected and Ingested in the index main?</b>
-- <b>On one of the infected hosts, the adversary was successful in creating a backdoor user. What is the new username?</b>
-- <b>On the same host, a registry key was also updated regarding the new backdoor user. What is the full path of that registry key?</b>
-- <b>Examine the logs and identify the user that the adversary was trying to impersonate.</b>
-- <b>What is the command used to add a backdoor user from a remote computer?</b>
+- <b>Can you identify the location of the ransomware?</b>
+- <b>What is the Sysmon event ID for the related file creation event?</b>
+- <b>Can you find the MD5 hash of the ransomware??</b>
+- <b>What file was saved to multiple folder locations?</b>
+- <b>What was the command the attacker used to add a new user to the compromised system?</b>
+- <b>The attacker migrated the process for better persistence. What is the migrated process image (executable), and what is the original process image (executable) when the attacker got on the system?</b>
+- <b>The attacker also retrieved the system hashes. What is the process image used for getting the system hashes?</b>
+- <b>What is the web shell the exploit deployed to the system?</b>
+- <b>What is the command line that executed this web shell?</b>
+- <b>What three CVEs did this exploit leverage? Provide the answer in ascending order.</b>
 
 
 <h2>Languages and Utilities Used</h2>
